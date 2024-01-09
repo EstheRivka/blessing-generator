@@ -1,8 +1,11 @@
-import express from 'express';
-import controller from './controller.js';
+// import express from 'express';
+// import controller from './controller.js';
+const express = require('express');
+const controller = require('./controller.js');
 const router = express.Router();
 
 router.route("/")
-    .get(controller.getBlessings)
+    .post(controller.getBlessings)
 
-export default router
+// export default router
+module.exports = router;
