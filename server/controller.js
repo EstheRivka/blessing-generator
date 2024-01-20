@@ -1,5 +1,4 @@
 const service = require('./service.js')
-// import service from './service.js'
 class Controller {
     getBlessings = async (req, res) => {
         const options = req.body;
@@ -27,5 +26,4 @@ class Controller {
 
 }
 const controller = new Controller();
-// export default controller;
 module.exports = controller;

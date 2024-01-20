@@ -1,12 +1,7 @@
-// import OpenAI from "openai";
-// import dotenv from 'dotenv';
-
-// dotenv.config();
 require('dotenv').config();
 const openAi = require('openai');
 const openai = new openAi({apiKey: process.env.api_key});
 class Service {
-
 
     getBlessings = async (options) => {
         if(!options||!options.nameReciver||!options.nameGiver||!options.amount||!options.gender||!options.event||!options.atmosphere || !options.length)
@@ -39,5 +34,4 @@ class Service {
 
 }
 const service = new Service();
-// export default service
 module.exports = service;
